@@ -1,0 +1,24 @@
+{
+	"NomeBanda": "Deep Purple",
+	"Local": "Citibank Hall",
+	"Data": "30/02/2018",
+	"Horário": "21h",
+	"Setores": {
+		"Setor 1":{
+			"Nome": "Pista",
+			"Valor": "200,00"
+		},
+		"Setor 2":{
+			"Nome": "Pista Premium",
+			"Valor": "450,00"
+		},
+		"Setor 3":{
+			"Nome": "Cadeirante",
+			"Valor": "150,00"
+		},
+		"Setor 4":{
+			"Nome": "Camarote",
+			"Valor": "300,00"
+		},
+	}
+}

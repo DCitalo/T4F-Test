@@ -1,0 +1,364 @@
+/*RESET*/
+@charse "UTf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Spectral+SC');
+*, *:after, *:before{
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: justify;
+}
+html, body, div, span, applet, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: white;
+    background-color:black;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+img{
+	width:100%;
+	height: auto;
+}
+/*RESET*/
+/*Fontes e Padroes */
+.Spectral{
+	font-family: 'Spectral SC', serif;
+}
+.Mont{
+	font-family: 'Montserrat', sans-serif;
+}
+.text-center{
+	-moz-text-align-last: center;
+    text-align-last: center;
+}
+.Bg-color-1{
+	background:#c8c8b4;
+}
+.Bg-color-2{
+	background: #000000 !important;
+}
+.Bg-color-3{
+	background: #a9a99a;
+}
+.Bg-color-4{
+	background: #D6D6C3;
+}
+.Bg-color-5{
+	background: #468465;
+}
+.DIB{
+    display: inline-block;
+}
+.DBA{
+	display: block;
+	position: absolute;
+}
+.DF{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;	
+}
+.DIF{
+	-webkit-display: inline-flex;
+	    -ms-display: inline-flex;
+	        display: inline-flex;	
+}
+.FW{
+	-webkit-flex-flow: wrap;
+	    -ms-flex-flow: wrap;
+	        flex-flow: wrap;
+}
+.PA{
+	position: absolute !important;
+}
+.PF{
+	position: fixed !important;
+}
+.DN{
+	display: none;
+}
+.DB{
+	display: block;
+}
+.FL{
+	float: left;
+}
+.FR{
+	float: right;
+}
+.hide{
+	visibility: hidden;
+	display: none;
+}
+/*Fontes e Padroes*/
+/*CONTAINER*/
+.container-100{
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-90{
+	width:90%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-80{
+	width:80%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-70{
+	width: 70%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-75{
+	width:75%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-60{
+	width:60%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-50{
+	width: 50%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-40{
+	width:40%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-33{
+	width: 33.333%;
+}
+.container-30{
+	width: 30%;
+	margin:0 auto;
+	position:relative;
+	height:auto; 
+}
+.container-25{
+	width:25%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-25-5{
+	width: calc(25% - 5px);
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-20{
+	width:20%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-20-5{
+	width: calc(20% - 5px);
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-15{
+	width:15%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-10{
+	width:10%;
+	margin:0 auto;
+	height:auto;
+}
+/*CONTAINER*/
+/*GERAL*/
+.logo {
+    width: 25%;
+    min-width: 320px;
+}
+.char-name , .planet-name{
+	font-size: 21px;
+    margin: 0px 0px 15px 0px;
+}
+section.container-90{
+    align-items: start;
+}
+.container-results {
+    align-items: center;
+}
+header {
+    align-items: center;
+    font-size: 25px;
+}
+.menu {
+	justify-content: space-around;
+}
+.unit-container {
+    border: 1px solid;
+    padding:15px 10px;
+    margin:10px auto;
+    background: #000;
+}
+.btn {
+    border: none;
+    background: none;
+}
+.detail-info {
+    text-transform: capitalize;
+}
+.info-button {
+    position: absolute;
+    right: 10px;
+    border: 1px solid;
+    padding: 5px 10px;
+    cursor: pointer;	
+}
+.show-info{
+    bottom: 0;
+}
+.hide-info{
+    top: 0;	
+}
+.container-detail {
+    margin: 10px 0;
+    border-bottom: 1px solid;
+    padding: 4px 0px;
+}
+.cont-movie {
+    padding: 4px 10px;
+}
+.fa-chevron-circle-left , .fa-chevron-circle-right {
+    color: #FFF;
+    text-align: center;
+    font-size: 35px;
+    cursor: pointer;
+}
+.title {
+    font-size: 35px;
+}
+/*GERAL*/
+/*MB-Settings*/
+@media (max-width: 1070px){
+	.tb-hide{
+		display: none;
+		visibility:hidden;
+	}
+	.tb-container-100{
+		width:100% !important;
+	}
+	.tb-container-90{
+		width:90% !important;
+	}
+	.tb-container-80{
+		width:80% !important;
+	}
+	.tb-container-70{
+		width:70% !important;
+	}
+	.tb-container-60{
+		width:60% !important;
+	}
+	.tb-container-50{
+		width:50% !important;
+	}
+	.tb-container-50-5{
+		width: calc(50% - 5px) !important;
+	}
+	.tb-container-40{
+		width:40% !important;
+	}
+	.tb-container-30{
+		width:30% !important;
+	}
+	.tb-container-20{
+		width:20% !important;
+	}
+	.tb-container-10{
+		width:10% !important;
+	}
+}
+@media (max-width: 710px){
+	.mb-hide{
+		display: none;
+		visibility:hidden;
+	}
+
+	.mb-container-100{
+		width:100% !important;
+	}
+	.mb-container-90{
+		width:90% !important;
+	}
+	.mb-container-80{
+		width:80% !important;
+	}
+	.mb-container-70{
+		width:70% !important;
+	}
+	.mb-container-60{
+		width:60% !important;
+	}
+	.mb-container-50{
+		width:50% !important;
+	}
+	.mb-container-40{
+		width:40% !important;
+	}
+	.mb-container-30{
+		width:30% !important;
+	}
+	.mb-container-20{
+		width:20% !important;
+	}
+	.mb-container-10{
+		width:10% !important;
+	}
+}
