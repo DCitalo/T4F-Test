@@ -1,37 +1,40 @@
 import React, { Component } from 'react';
-import ListPlanet from './ListPlanet';
-import axios from 'axios';
+import ListSetores from './ListSetores';
+var jsonData = require('./band');
+var setores = jsonData.Setores;
 
 class App extends Component {
   constructor(props){
     super(props);
 
     this.state = {
-      PageBand:['/band.json'],
-      BandInfo:[],
+      BandName:[jsonData.NomeBanda],
+      ShowLocal:[jsonData.Local],
+      ShowHor:[jsonData.Horario],
+      NomeShow:[jsonData.NomeShow],
+      ShowSet:[setores]
     }
   
-    this.getBand = this.getBand.bind(this);
   }
 
-  getBand(){
-    const {PageBand} = this.state;    
-    return axios.get("./band.json")
-    .then((response) => {
-      this.setState({BandInfo: response.data})
-    });
-  }
-
-  render() {
-    const {BandInfo} = this.state;
-    console.log(BandInfo);
-      
-      return ( 
-        <section className="container-90 DF FW">
-          <div>
-            <h1></h1>
-          </div>
-        </section>
+  render(){
+      const {BandName} = this.state;
+      const {NomeShow} = this.state;
+      const {ShowLocal} = this.state;
+      const {ShowHor} = this.state;
+      const {ShowSet} = this.state; 
+      return (      
+<section className='container-80 DF FW'>
+    <div className='container-100 info-container'>
+      <ul className='Container-90 DF FW'>
+        <li>{NomeShow}</li>
+        <li>{BandName}</li>
+        <li>{ShowLocal}</li>
+        <li>{ShowHor}</li>
+      </ul>
+      <ListSetores ShowSet={ShowSet} />
+    </div>
+</section>
       );
   }
 }

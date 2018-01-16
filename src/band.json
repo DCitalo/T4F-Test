@@ -1,24 +1,29 @@
 {
 	"NomeBanda": "Deep Purple",
+	"NomeShow" : "InFinite Tour",
 	"Local": "Citibank Hall",
 	"Data": "30/02/2018",
-	"Horário": "21h",
-	"Setores": {
-		"Setor 1":{
-			"Nome": "Pista",
+	"Horario": "21h",
+	"Setores": [
+		{
+			"id":"1",
+			"NomeSetor": "Pista",
 			"Valor": "200,00"
 		},
-		"Setor 2":{
-			"Nome": "Pista Premium",
+		{
+			"id":"2",
+			"NomeSetor": "Pista Premium",
 			"Valor": "450,00"
 		},
-		"Setor 3":{
-			"Nome": "Cadeirante",
+		{
+			"id":"3",
+			"NomeSetor": "Cadeirante",
 			"Valor": "150,00"
 		},
-		"Setor 4":{
-			"Nome": "Camarote",
+		{
+			"id":"4",
+			"NomeSetor": "Camarote",
 			"Valor": "300,00"
-		},
-	}
+		}
+	]
 }
