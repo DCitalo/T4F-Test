@@ -101,6 +101,10 @@ img{
 	visibility: hidden;
 	display: none;
 }
+.show{
+	visibility: visible;
+	display: block;
+}
 /*Fontes e Padroes*/
 /*CONTAINER*/
 .container-100{
@@ -240,28 +244,27 @@ li.content-header {
 }
 .info-container {
   background-image: linear-gradient(-60deg,#a5a5a5 , #636);
-  margin: 40px 20px;
-  border-radius: 20px;
-  padding: 40px 80px;
+  border-radius: 0 0 10px 10px;
+}
+.info-header{
+	height: 50px;
+    margin-bottom: 20px;
+    background: #000;
 }
 .unit-container{
 	color: 	#000;
 	margin:10px auto;
 }
-.unit-container div.ticket {
+.ticket {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
 }
-.unit-container div.ticket {
-  width: 90%;
-  max-width: 320px;
-  margin: 0 auto;
-}
-.unit-container div.ticket .top,
-.unit-container div.ticket .bottom,
-.unit-container div.ticket .rip {
+.ticket .top, .ticket .bottom, .ticket .rip {
   background-color: #fff;
 }
-.unit-container div.ticket .top {
+.ticket .top {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
@@ -271,14 +274,14 @@ li.content-header {
 .ticket-head{
 	padding:10px 18px 5px 18px;
 }
-.unit-container div.ticket .bottom {
+.ticket .bottom {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 18px;
   height: 60px;
   padding-top: 10px;
 }
-.unit-container div.ticket .bottom .barcode {
+.barcode {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAAABCAYAAABXChlMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAACPSURBVChTXVAJDsMgDOsrVpELiqb+/4c0DgStQ7JMYogNh2gdvg5VfXFCRIZaC6BOtnoNFpvaumNmwb/71Frrm8XvgYkker1/g9WzMOsohaOGNziRs5inDsAn8yEPengTapJ5bmdZ2Yv7VvfPN6AH2NJx7nOWPTf1/78hoqgxhzw3ZqYG1Dr/9ur3y8vMxgNZhcAUnR4xKgAAAABJRU5ErkJggg==);
   background-repeat: repeat-y;
   min-width: 58px;
@@ -325,10 +328,40 @@ li.content-header {
   transform: translate(-50%, -50%) rotate(225deg);
   right: -30px;
 }
-
+.map-container {
+    width: 100%;
+    background: #FFF;
+    z-index: 10;
+    left: 0;
+    top: 47px;
+}
+.map-info{
+	width:20%;
+    text-align: right;
+}
+.content-header > a.buy {
+    max-width: 320px;
+    margin: 40px auto;
+    font-size: 16px;
+}
+.map-container > img {
+    max-height: 200px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+.close-map {
+    height: 37px;
+}
+.react-numeric-input , .react-numeric-input > input{
+	width: 100%;
+}
+.label-cont{
+	margin:5px 0;
+}
 /*GERAL*/
 /*MB-Settings*/
-@media (max-width: 1070px){
+@media (max-width: 1080px){
 	.tb-hide{
 		display: none;
 		visibility:hidden;
