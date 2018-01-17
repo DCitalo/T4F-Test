@@ -8,22 +8,26 @@
 		{
 			"id":"1",
 			"NomeSetor": "Pista",
-			"Valor": "200,00"
+			"Valor": "200,00",
+			"Map":"Images/map-show-pis.png"
 		},
 		{
 			"id":"2",
 			"NomeSetor": "Pista Premium",
-			"Valor": "450,00"
+			"Valor": "450,00",
+			"Map":"Images/map-show-pis-pre.png"
 		},
 		{
 			"id":"3",
 			"NomeSetor": "Cadeirante",
-			"Valor": "150,00"
+			"Valor": "150,00",
+			"Map":"Images/map-show-cad.png"
 		},
 		{
 			"id":"4",
 			"NomeSetor": "Camarote",
-			"Valor": "300,00"
+			"Valor": "300,00",
+			"Map":"Images/map-show-cam.png"
 		}
 	]
 }

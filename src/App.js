@@ -25,12 +25,15 @@ class App extends Component {
       const {ShowSet} = this.state; 
       return (      
 <section className='container-80 DF FW'>
-    <div className='container-100 info-container'>
-      <ul className='Container-90 DF FW'>
-        <li>{NomeShow}</li>
-        <li>{BandName}</li>
-        <li>{ShowLocal}</li>
-        <li>{ShowHor}</li>
+    <div className='container-100 info-container DF FW'>
+      <div className='container-30 NomeBanda'>
+        <img src='Images/Deep_Purple-logo.png' alt='{BandName}' />
+      </div>
+      <ul className='container-70 DF FW infos-banda'>
+        <li className='container-100' >Nome do Show: {NomeShow}</li>
+        <li className='container-100' >Nome da Banda: {BandName}</li>
+        <li className='container-100' >Local: {ShowLocal}</li>
+        <li className='container-100' >Horário: {ShowHor}</li>
       </ul>
       <ListSetores ShowSet={ShowSet} />
     </div>

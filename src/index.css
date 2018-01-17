@@ -4,7 +4,6 @@
 	text-decoration: none;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	text-align: justify;
 }
 html, body{
 	height: 100%;
@@ -233,11 +232,16 @@ li.content-header {
 .HeaderShowLogo {
     max-width: 320px;
 }
+.container-30.NomeBanda {
+    width: 200px;
+    height: 200px;
+    background: #FFF;
+    padding: 70px 10px;
+}
 .info-container {
   background-image: linear-gradient(-60deg,#a5a5a5 , #636);
   margin: 40px 20px;
   border-radius: 20px;
-  font-family: 'Lato', sans-serif;
   padding: 40px 80px;
 }
 .unit-container{
@@ -248,25 +252,9 @@ li.content-header {
   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
 }
 .unit-container div.ticket {
-  width: 60%;
+  width: 90%;
   max-width: 320px;
   margin: 0 auto;
-}
-.unit-container div.ticket .top > div,
-.unit-container div.ticket .bottom > div {
-  padding: 0 18px;
-}
-.unit-container div.ticket .top > div:first-child,
-.unit-container div.ticket .bottom > div:first-child {
-  padding-top: 18px;
-}
-.unit-container div.ticket .top > div:last-child,
-.unit-container div.ticket .bottom > div:last-child {
-  padding-bottom: 18px;
-}
-.unit-container div.ticket .top img,
-.unit-container div.ticket .bottom img {
-  padding: 18px 0;
 }
 .unit-container div.ticket .top,
 .unit-container div.ticket .bottom,
@@ -277,8 +265,11 @@ li.content-header {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-.unit-container div.ticket .top .deetz {
-  padding-bottom: 10px !important;
+.deetz {
+  	padding:5px 18px 10px 18px;
+}
+.ticket-head{
+	padding:10px 18px 5px 18px;
 }
 .unit-container div.ticket .bottom {
   border-bottom-right-radius: 5px;
@@ -303,6 +294,9 @@ li.content-header {
   color: #fff;
   text-decoration: none;
 }
+.buy:hover{
+	background: #000;
+}
 .unit-container div.ticket .rip {
   height: 20px;
   margin: 0 10px;
@@ -321,11 +315,8 @@ li.content-header {
   height: 20px;
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  border: 5px solid transparent;
-  border-top-color: #fff;
-  border-right-color: #fff;
-  border-radius: 100%;
-  pointer-events: none;
+  border-radius: 50%;
+  box-shadow: 10px -10px 0px 7px white;
 }
 .unit-container div.ticket .rip:before {
   left: -10px;
@@ -333,9 +324,6 @@ li.content-header {
 .unit-container div.ticket .rip:after {
   transform: translate(-50%, -50%) rotate(225deg);
   right: -30px;
-}
-.unit-container div .-bold {
-  font-weight: bold;
 }
 
 /*GERAL*/

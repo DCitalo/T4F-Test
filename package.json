@@ -2,7 +2,7 @@
   "name": "non-dutch-star-wars",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dcitalo.github.io/frontend-challenge/",
+  "homepage": "https://dcitalo.github.io/T4F-Test/",
   "dependencies": {
     "axios": "^0.17.1",
     "gh-pages": "^1.1.0",
