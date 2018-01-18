@@ -16,6 +16,8 @@ ou
 
 3 O teste estará no link `http://localhost:3000/`
 
+O site também pode ser baixado no celular através do navegador, para isso vá às configurações da pagina e selecione `adicionar à tela inicial`.
+
 Muito obrigado pela oportunidade,
 
 __Ítalo Drago.__
