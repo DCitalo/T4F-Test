@@ -160,7 +160,7 @@ img{
     -moz-background-attachment: fixed;
     -o-background-attachment: fixed;
     background-attachment: fixed;
-    background: #fff url('/Images/bg_intro_desktop2.jpg') no-repeat;
+    background: #fff url('https://raw.githubusercontent.com/DCitalo/T4F-Test/master/public/Images/bg_intro_desktop2.jpg?token=APoFvHyOEKPwehWw_cvOLgHLGzNB2zRJks5aakEcwA%3D%3D') no-repeat;
     background-size: cover;background-position: 50% 0;
     -webkit-background-attachment: fixed;
     -moz-background-attachment: fixed;
@@ -215,7 +215,7 @@ img{
 .infos-show-title::before , .infos-show-title::after{
 	content:'';
     height: 40px;
-  	background-image: url(/Images/barcode.png);
+  	background-image: url(https://raw.githubusercontent.com/DCitalo/T4F-Test/master/public/Images/barcode.png?token=APoFvDXYBhbsaTvt0EW21xMXA4q6nn40ks5aakFjwA%3D%3D);
   	background-size: 4px 2px;
   	background-repeat: repeat-x;
   	background-position: center;
@@ -260,7 +260,7 @@ img{
   padding-top: 10px;
 }
 .barcode {
-  background-image: url(/Images/dots.png);
+  background-image: url(https://raw.githubusercontent.com/DCitalo/T4F-Test/master/public/Images/dots.png?token=APoFvMtXxSuXzSpaY6sddLMxx3OUuKsVks5aakFgwA%3D%3D);
   background-repeat: repeat-y;
   min-width: 58px;
 }
@@ -281,7 +281,7 @@ img{
 .unit-container div.ticket .rip {
   height: 20px;
   margin: 0 10px;
-  background-image: url(/Images/barcode.png);
+  background-image: url(https://raw.githubusercontent.com/DCitalo/T4F-Test/master/public/Images/barcode.png?token=APoFvDXYBhbsaTvt0EW21xMXA4q6nn40ks5aakFjwA%3D%3D);
   background-size: 4px 2px;
   background-repeat: repeat-x;
   background-position: center;
