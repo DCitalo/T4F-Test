@@ -11,12 +11,12 @@ class ListSetores extends Component {
         const NomeShow  = jsonData.NomeShow;
         const DataShow  = jsonData.Data;
     	return (
-    	  <ul className='container-70 DF FW'>
+    	  <ul id='Tickets' className='container-70 tb-container-100 DF FW'>
           <li className='container-100 text-center infos-show-title DF FW'><i className="fas fa-ticket-alt"></i></li>
     	    {
     	    	ShowSet.map((p) =>{
     	    		return(
-    	    			<li className='container-50 unit-container DF FW' key={p.id}>
+    	    			<li className='container-50 tb-container-90 unit-container DF FW' key={p.id}>
                             <div className='ticket'> 
                                 <div className='top'>
                                     <div className='ticket-head'>

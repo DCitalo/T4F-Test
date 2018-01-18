@@ -9,7 +9,9 @@
     "react-dom": "^16.2.0",
     "react-google-maps": "^9.4.5",
     "react-numeric-input": "^2.2.3",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-scrollable-anchor": "^0.5.0",
+    "react-scrollchor": "^4.2.1"
   },
   "scripts": {
     "predeploy": "npm run build",
