@@ -330,8 +330,8 @@ img{
     margin-right: 15px;
 }
 .map-container > img {
-    max-height: 200px;
     width: auto;
+    max-height: 200px;
     margin: 0 auto;
     display: block;
 }
@@ -377,13 +377,16 @@ img{
 		text-align: center;
 	}
 	.tb-container-100{
-		width:100% !important;
+		width:100%;
 	}
 	.tb-container-90{
-		width:90% !important;
+		width:90%;
 	}
 	.footerBannerSpaceNew{
 		margin:0 auto;
+	}
+	.close-map {
+	    height: 5px;
 	}
 	.realizacao{
 		margin: 0 auto;
@@ -391,4 +394,9 @@ img{
 	.footerCompany{
 		margin:10px auto;
 	}
+	.map-container > img {
+		max-height: 231px;
+		width: 100%;
+	}
 }
+/*MB-Settings*/

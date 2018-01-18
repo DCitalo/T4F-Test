@@ -42,7 +42,7 @@ class App extends Component {
 
       return ( 
         <div id='container'>
-          <Header Header={Header} /> 
+          <Header/> 
           <section className='container-100 info-container DF FW'>
             <div className='container-90 tb-container-90 info-header'>
               <span><b>{BandName}</b> - {NomeShow}</span>
@@ -68,7 +68,7 @@ class App extends Component {
               </div>
             </div>
           </section>
-          <Footer Footer={Footer} />
+          <Footer/>
         </div>
       );
   }
