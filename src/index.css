@@ -1,5 +1,6 @@
 /*RESET*/
 @charse "UTf-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 *, *:after, *:before{
 	text-decoration: none;
 	-webkit-box-sizing: border-box;
@@ -15,6 +16,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
 acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend {
     vertical-align: baseline;
+    font-family: 'Raleway', sans-serif;
     font-weight: inherit;
     font-style: inherit;
     color: inherit;
@@ -30,7 +32,12 @@ fieldset, form, label, legend {
 body {
     line-height: 1;
     color: white;
-    background-color:black;
+}
+footer{
+	padding: 30px 0px;
+	color:black;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
 }
 ol, ul {
     list-style: none;
@@ -170,20 +177,8 @@ img{
 	position:relative;
 	height:auto;
 }
-.container-25-5{
-	width: calc(25% - 5px);
-	margin:0 auto;
-	position:relative;
-	height:auto;
-}
 .container-20{
 	width:20%;
-	margin:0 auto;
-	position:relative;
-	height:auto;
-}
-.container-20-5{
-	width: calc(20% - 5px);
 	margin:0 auto;
 	position:relative;
 	height:auto;
@@ -212,7 +207,7 @@ img{
     -o-background-attachment: fixed;
     background-attachment: fixed;
 }
-li.content-header {
+.content-header {
 	font-size: 0px;
 }
 .center {
@@ -236,24 +231,48 @@ li.content-header {
 .HeaderShowLogo {
     max-width: 320px;
 }
-.container-30.NomeBanda {
+.NomeBanda {
     width: 200px;
     height: 200px;
     background: #FFF;
     padding: 70px 10px;
 }
 .info-container {
-  background-image: linear-gradient(-60deg,#a5a5a5 , #636);
   border-radius: 0 0 10px 10px;
 }
 .info-header{
-	height: 50px;
+    margin-top: 30px;
     margin-bottom: 20px;
-    background: #000;
+    text-align: center;
+    font-size: 45px;
 }
+.infos-show-title{
+	font-size: 40px;
+	margin: 20px 5px;
+	-webkit-justify-content: space-between;
+        justify-content: space-between;
+}
+.infos-show-title::before , .infos-show-title::after{
+	content:'';
+    height: 40px;
+  	background-image: url(/Images/barcode.png);
+  	background-size: 4px 2px;
+  	background-repeat: repeat-x;
+  	background-position: center;
+ 	position: relative;
+  	width: calc(50% - 45px);
+  	display: block;
+}
+.infos-show{
+	margin:20px auto;
+	font-size: 26px;
+}
+
 .unit-container{
-	color: 	#000;
 	margin:10px auto;
+}
+#root{
+	background: linear-gradient(-60deg,#a5a5a5 , #636);
 }
 .ticket {
   width: 320px;
@@ -270,9 +289,11 @@ li.content-header {
 }
 .deetz {
   	padding:5px 18px 10px 18px;
+  	color: 	#000;
 }
 .ticket-head{
 	padding:10px 18px 5px 18px;
+	color: 	#636;
 }
 .ticket .bottom {
   border-bottom-right-radius: 5px;
@@ -282,7 +303,7 @@ li.content-header {
   padding-top: 10px;
 }
 .barcode {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAAABCAYAAABXChlMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAACPSURBVChTXVAJDsMgDOsrVpELiqb+/4c0DgStQ7JMYogNh2gdvg5VfXFCRIZaC6BOtnoNFpvaumNmwb/71Frrm8XvgYkker1/g9WzMOsohaOGNziRs5inDsAn8yEPengTapJ5bmdZ2Yv7VvfPN6AH2NJx7nOWPTf1/78hoqgxhzw3ZqYG1Dr/9ur3y8vMxgNZhcAUnR4xKgAAAABJRU5ErkJggg==);
+  background-image: url(/Images/dots.png);
   background-repeat: repeat-y;
   min-width: 58px;
 }
@@ -303,7 +324,7 @@ li.content-header {
 .unit-container div.ticket .rip {
   height: 20px;
   margin: 0 10px;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAYAAAB7Xa1eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAAaSURBVBhXY5g7f97/2XPn/AcCBmSMQ+I/AwB2eyNBlrqzUQAAAABJRU5ErkJggg==);
+  background-image: url(/Images/barcode.png);
   background-size: 4px 2px;
   background-repeat: repeat-x;
   background-position: center;
@@ -339,10 +360,16 @@ li.content-header {
 	width:20%;
     text-align: right;
 }
-.content-header > a.buy {
+.content-header > .buy {
     max-width: 320px;
     margin: 40px auto;
     font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    text-indent: -15px;
+}
+.buy > svg {
+    margin-right: 15px;
 }
 .map-container > img {
     max-height: 200px;
@@ -359,6 +386,22 @@ li.content-header {
 .label-cont{
 	margin:5px 0;
 }
+.info-footer{
+	margin:40px auto;
+}
+.realizacao{
+	max-width: 220px;
+}
+
+.footerCompany{
+	color: #a3a3a3;
+    font-size: 14px;
+    line-height: 16px;
+    }
+.footerCompany h3{
+	margin-bottom: 10px;
+    }
+
 /*GERAL*/
 /*MB-Settings*/
 @media (max-width: 1080px){

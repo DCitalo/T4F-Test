@@ -11,11 +11,12 @@ class ListSetores extends Component {
         const NomeShow  = jsonData.NomeShow;
         const DataShow  = jsonData.Data;
     	return (
-    	  <div id='Tickets' className='container-100 DF FW'>
+    	  <ul className='container-70 DF FW'>
+          <li className='container-100 text-center infos-show-title DF FW'><i className="fas fa-ticket-alt"></i></li>
     	    {
     	    	ShowSet.map((p) =>{
     	    		return(
-    	    			<div className='container-50 unit-container DF FW' key={p.id}>
+    	    			<li className='container-50 unit-container DF FW' key={p.id}>
                             <div className='ticket'> 
                                 <div className='top'>
                                     <div className='ticket-head'>
@@ -53,11 +54,11 @@ class ListSetores extends Component {
                                   <a className='buy container-50 text-center' href=''>Comprar</a>
                                </div>
                             </div>
-    	    			</div>
+    	    			</li>
     	    		)
     	    	})	
     	    }
-    	  </div>
+    	  </ul>
     	);
   	}
 }

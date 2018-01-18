@@ -2,8 +2,11 @@
 	"NomeBanda": "Deep Purple",
 	"NomeShow" : "InFinite Tour",
 	"Local": "Citibank Hall",
+	"Mapa":"Images/map-show.png",
 	"Data": "30/02/2018",
 	"Horario": "21h",
+	"Realizacao":"Images/img_realizacao.png",
+	"RealizacaoNome":"Time for Fun",
 	"Setores": [
 		{
 			"id":"1",
